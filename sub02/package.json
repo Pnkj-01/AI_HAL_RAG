@@ -1,0 +1,18 @@
+{
+  "name": "ai-hal-rag-sub02",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Safety guardrails and verification module for AI_hal_rag",
+  "scripts": {
+    "start": "node safety-guardrails.js",
+    "start:live": "node --env-file=.env safety-guardrails.js --live",
+    "test": "node --check safety-guardrails.js && node safety-guardrails.js"
+  },
+  "dependencies": {
+    "openai": "^7.7.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
